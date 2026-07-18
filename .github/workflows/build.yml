@@ -37,7 +37,7 @@ jobs:
           find app/build -name "*.apk" -type f || echo "未检索到任何APK安装包"
 
       - name: Rename APK
-        run: cp app/build/outputs/apk/release/app-release.apk yxt-adfree.apk
+        run: cp app/build/outputs/apk/release/app-release-unsigned.apk yxt-adfree.apk
 
       - name: Upload artifact (每次构建可下载)
         uses: actions/upload-artifact@v4
