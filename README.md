@@ -1,6 +1,6 @@
 # 乐校通去广告(YXTAdFree)
 
-一个 **LSPosed / Xposed 模块**,移除易校通(`client.android.yixiaotong`)App 内的全部广告。
+一个 **LSPosed / Xposed 模块**,移除乐校通(`client.android.yixiaotong`)App 内的全部广告。
 
 ## 功能
 
@@ -15,8 +15,8 @@
 
 1. 需已安装 **LSPosed**(Zygisk 版,配 Magisk / KernelSU)
 2. 从 [Releases](../../releases) 下载 `yxt-adfree.apk` 并安装
-3. 在 LSPosed 管理器中**启用本模块**,作用域勾选**易校通**(带 `xposedscope`,通常自动勾选)
-4. 强制停止易校通后重新打开即可生效
+3. 在 LSPosed 管理器中**启用本模块**,作用域勾选**乐校通**(带 `xposedscope`,通常自动勾选)
+4. 强制停止乐校通后重新打开即可生效
 
 ## 本地构建
 
@@ -29,7 +29,7 @@
 
 ## 原理
 
-易校通用 ijiami 加固,真实广告代码在 `client.android.yixiaotong.v3.ui.adv.*`(聚合 SDK 为云帆 YFanAds)。模块在运行时(真实类加载器就绪后)Hook 广告总控 `AdvControlUtil.isOpenAdv` 强制关闭各类广告开关,并对各广告入口方法 no-op,从源头阻止广告请求。
+乐校通用 ijiami 加固,真实广告代码在 `client.android.yixiaotong.v3.ui.adv.*`(聚合 SDK 为云帆 YFanAds)。模块在运行时(真实类加载器就绪后)Hook 广告总控 `AdvControlUtil.isOpenAdv` 强制关闭各类广告开关,并对各广告入口方法 no-op,从源头阻止广告请求。
 
 ## 免责声明
 
