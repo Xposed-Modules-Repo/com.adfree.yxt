@@ -32,6 +32,9 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew assembleRelease --no-daemon --stacktrace
+          # 调试：列出实际打包产出目录内容
+          ls -la app/build/outputs/apk/release/ || echo "Release包输出目录不存在"
+          find app/build -name "*.apk" -type f || echo "未检索到任何APK安装包"
 
       - name: Rename APK
         run: cp app/build/outputs/apk/release/app-release.apk yxt-adfree.apk
