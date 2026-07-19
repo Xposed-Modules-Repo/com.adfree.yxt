@@ -2,6 +2,8 @@
 
 一个 **LSPosed / Xposed 模块**,移除乐校通(`client.android.yixiaotong`)App 内的全部广告。
 
+> 版本更新见 [更新日志 CHANGELOG](CHANGELOG.md)。
+
 ## 功能
 
 - **去广告**:开屏 / 插屏 / 首页插屏 / 信息流 / banner 全部拦截,启动直接进主页,不卡启动页
