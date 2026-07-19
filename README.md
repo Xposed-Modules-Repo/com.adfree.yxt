@@ -31,6 +31,11 @@
 
 乐校通用 ijiami 加固,真实广告代码在 `client.android.yixiaotong.v3.ui.adv.*`(聚合 SDK 为云帆 YFanAds)。模块在运行时(真实类加载器就绪后)Hook 广告总控 `AdvControlUtil.isOpenAdv` 强制关闭各类广告开关,并对各广告入口方法 no-op,从源头阻止广告请求。
 
+## 文档
+
+- [完整技术文档 DOCS.md](DOCS.md) —— 目标分析、逆向过程、加固对抗、广告系统剖析、Hook 原理、两代 Xposed API、Kotlin+Compose 重构、跨进程日志、全部依赖、构建演进、CI、版本历史、维护排错(共 21 章,极详细)
+- [更新日志 CHANGELOG.md](CHANGELOG.md)
+
 ## 免责声明
 
 仅供学习与个人使用。请勿用于商业或非法用途。
