@@ -27,10 +27,6 @@
 
 需要 JDK 17 + Android SDK(compileSdk 36 / build-tools 36.0.0),AGP 9.3.0 / Gradle 9.6.1,基于 LibXposed 现代 API 102。国内网络已在 `settings.gradle.kts` 配置阿里云镜像。
 
-## 云端构建(GitHub Actions)
-
-推送 `v` 开头的 tag(如 `v4.0`)即自动编译并发布 Release;也可在 Actions 页手动触发。
-
 ## 原理
 
 乐校通用 ijiami 加固,真实广告代码在 `client.android.yixiaotong.v3.ui.adv.*`(聚合 SDK 为云帆 YFanAds)。模块在运行时(真实类加载器就绪后)Hook 广告总控 `AdvControlUtil.isOpenAdv` 强制关闭各类广告开关,并对各广告入口方法 no-op,从源头阻止广告请求。
