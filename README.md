@@ -14,7 +14,7 @@
 ## 安装
 
 1. 需已安装 **LSPosed**(Zygisk 版,配 Magisk / KernelSU)
-2. 从 [Releases](../../releases) 下载 `yxt-adfree.apk` 并安装
+2. 从 [Releases](https://github.com/zzdwymk/com.adfree.yxt/releases) 下载 `yxt-adfree.apk` 并安装
 3. 在 LSPosed 管理器中**启用本模块**,作用域勾选**乐校通**(带 `xposedscope`,通常自动勾选)
 4. 强制停止乐校通后重新打开即可生效
 
